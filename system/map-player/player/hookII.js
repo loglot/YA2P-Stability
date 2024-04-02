@@ -4,8 +4,8 @@ export class Hook{
     enabled = false ; visibility = false
     x1 ; x2
     y1 ; y2
-    length ; targetLength = 0 ; maxLength = NaN
-    trajectory = new Object() ; speed = 80 ; threshold = 5 ; motion
+    length ; targetLength = 0 ; maxLength = 200000
+    trajectory = new Object() ; speed = 200 ; threshold = 5 ; motion
     slope
     hitNum
     fixed = false

@@ -1,9 +1,9 @@
 export class Orb{
     x; velX = 0
     y; velY = 0
-    velChange = 2
+    velChange = 10
     avgSize = 0
-    size = 4
+    size = 6
     draw
     player
     color
