@@ -78,7 +78,7 @@ export class Sound{
             var song = new Audio(`https://raw.githubusercontent.com/loglot/yet-another-2d-platformer/main/assets/audio/music/song${songNum}.WAV`)
             song.volume = v
             await this.sleep(2000)
-            song.play()
+            //song.play()
             
             await this.sleep(this.songLength[songNum - 1])
         }

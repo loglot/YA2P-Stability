@@ -5,13 +5,13 @@ import { Orb } from "./orbAnim.js";
 
 export class Player {
 
-    x; velX = -25; maxVelX = 200000000;
-    y; velY = 50; maxVelY = 200; avgVelY = 0
+    x; velX = 0; maxVelX = 200000000;
+    y; velY = 0; maxVelY = 200; avgVelY = 0
     noclipVelChange = 10; velChange = 2;
-    friction = 1.1; airFriction = 1.1; hookFriction = .95;
+    friction = 1; airFriction = 1; hookFriction = 1;
 
     jump = 0; lastJump = 0; coyoteTime = 5;
-    jumpVel = 37 ; float = .79567; gravity = 1.9; 
+    jumpVel = 37 ; float = .19567; gravity = .5; 
 
     wallJumpLeft = false; wallJumpAmmountLeft = false;
     wallJumpRight = false; wallJumpAmmountRight = false;

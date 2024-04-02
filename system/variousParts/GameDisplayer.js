@@ -83,7 +83,7 @@ export class GameDisplayer {
 
 
         if(!this.debug.backGrid) {
-            ctx.fillStyle = `rgb(${this.r}, ${this.g}, ${this.b})`;
+            ctx.fillStyle = "#afbfaf";
             ctx.rect(0, 0, 100000, 10000) 
             ctx.fill()
             this.background.Draw()
@@ -141,10 +141,10 @@ export class GameDisplayer {
                 this.signTextPos = ((this.signDisplayPos * 12) + 800 )/ 13
             }
         }
-        this.drawUtils.Rect(0, 675 + this.signDisplayPos, 10000, 10000, "#33363f", uictx)
-        this.drawUtils.Rect(0, 700 + this.signDisplayPos, 10000, 10000, "#d8d8d8", uictx)
+        this.drawUtils.Rect(0, 675 + this.signDisplayPos, 10000, 10000, "#d8d8d8", uictx)
+        this.drawUtils.Rect(0, 700 + this.signDisplayPos, 10000, 10000, "#33363f", uictx)
         for(let j = 0; j < 6; j++){
-            this.drawUtils.Text(this.signText[j], 100, (800 + (100 * j)) + this.signTextPos *(j/2 + 1),"#73767f", "#33363f", uictx)
+            this.drawUtils.Text(this.signText[j], 100, (800 + (100 * j)) + this.signTextPos *(j/2 + 1), "#000","#d8d8d8", uictx)
         }
     }
 
@@ -267,7 +267,7 @@ export class GameDisplayer {
                 this.game.hook.y1,
                 this.game.hook.x2 + this.camera.x,
                 this.game.hook.y2 + this.camera.y,/**/
-                "#A06000", 
+                "#0f0f0f", 
                 30 + -this.game.hook.length/70, 
                 true, "#6b4101" )
         }
@@ -280,7 +280,7 @@ export class GameDisplayer {
                 this.game.hookII.y2 + this.camera.y,/**/
                 "#6b4101", 
                 30 + -this.game.hookII.length/70, 
-                true, "#A06000" )
+                true, "#0f0f0f" )
         }
     }
 
@@ -316,11 +316,11 @@ export class GameDisplayer {
         if(this.debug.bean && !this.player.hidden) {  
         this.drawHeld()
             if (this.player.avgVelY > 20){
-                this.drawUtils.Bean(-this.player.x + this.camera.x, -this.player.y + this.camera.y, 50 + (20/2), 100 - 20, "#afbfaf") 
+                this.drawUtils.Bean(-this.player.x + this.camera.x, -this.player.y + this.camera.y, 50 + (20/2), 100 - 20, `rgb(${this.r}, ${this.g}, ${this.b})`) 
             } else if (this.player.avgVelY < -20){
-                this.drawUtils.Bean(-this.player.x + this.camera.x, -this.player.y + this.camera.y, 50 + (-20/2), 100 + 20, "#afbfaf") 
+                this.drawUtils.Bean(-this.player.x + this.camera.x, -this.player.y + this.camera.y, 50 + (-20/2), 100 + 20, `rgb(${this.r}, ${this.g}, ${this.b})`) 
             } else{
-                this.drawUtils.Bean(-this.player.x + this.camera.x, -this.player.y + this.camera.y, 50 + (this.player.avgVelY/2), 100 - this.player.avgVelY, "#afbfaf") 
+                this.drawUtils.Bean(-this.player.x + this.camera.x, -this.player.y + this.camera.y, 50 + (this.player.avgVelY/2), 100 - this.player.avgVelY, `rgb(${this.r}, ${this.g}, ${this.b})`) 
             }
         }
 

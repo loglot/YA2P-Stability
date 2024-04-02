@@ -189,9 +189,9 @@ export class Death {
         
         for (let i = 0; i < this.hitboxes.length; i++) {
             if(this.hitboxes[i].extraInfoI){
-                this.hitboxes[i].nDraw(camera, "#300000");
+                this.hitboxes[i].nDraw(camera, "#dbb000");
             } else {
-                this.hitboxes[i].nDraw(camera, "#700000");
+                this.hitboxes[i].nDraw(camera, "#fff");
 
             }
         }
