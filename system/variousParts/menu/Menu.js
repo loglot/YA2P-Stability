@@ -24,7 +24,7 @@ export class Menu {
         } else {
             this.draw.Text("P r e s s W T o S t a r t", 600, 500, `rgba(70, 70, 70, ${this.opacity})`, `rgba(255, 255, 255, ${this.opacity})`)
         }
-        this.draw.Text("Y e t A n o t h e r 2 d P l a t f o r m e r", 600, 300, `rgba(70, 70, 70, ${this.opacity})`, `rgba(255, 255, 255, ${this.opacity})`)
+        this.draw.Text("Y e t   A n o t h e r   2 d P l a t f o r m e r   S T A B I L I T Y", 600, 300, `rgba(70, 70, 70, ${this.opacity})`, `rgba(255, 255, 255, ${this.opacity})`)
 
         
         //this.draw.Text("P r e s s S T o E n t e r S e t t i n g s", 600,600, `rgba(70, 70, 70, ${this.opacity})`, `rgba(255, 255, 255, ${this.opacity})`)
